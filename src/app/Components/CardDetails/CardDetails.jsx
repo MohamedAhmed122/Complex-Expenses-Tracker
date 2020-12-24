@@ -7,7 +7,7 @@ import { Doughnut } from 'react-chartjs-2'
 
 import useStyles from './styles';
 
-export default function CardDetails({title}) {
+export default function CardDetails({title,price}) {
 
     const classes = useStyles();
 
@@ -16,7 +16,7 @@ export default function CardDetails({title}) {
             <CardHeader title={title} />
             <CardContent>
                 <Typography variant='h3'>
-                    199$
+                    {price}$
                 </Typography>
                 {/* <Doughnut data='DATA' /> */}
             </CardContent>

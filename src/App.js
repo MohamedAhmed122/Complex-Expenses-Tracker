@@ -3,6 +3,7 @@ import React from 'react'
 
 import useStyles from './Styles'
 import CardDetails from './app/Components/CardDetails/CardDetails';
+import MainCard from './app/Components/MainCard/MainCard';
 
 
 function App() {
@@ -11,13 +12,13 @@ function App() {
     <div>
       <Grid className={classes.grid} container alignItems='center' justify='center' spacing={0} style={{height:'100vh'}}>
         <Grid item xs={12} sm={4}>
-          <CardDetails title='Income' />
+          <CardDetails title='Income' price={100} />
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <MainCard />
         </Grid>
         <Grid item xs={12} sm={4}>
-          Main
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <CardDetails title='Expenses' />
+          <CardDetails title='Expenses' price={40} />
         </Grid>
       </Grid>
     </div>
