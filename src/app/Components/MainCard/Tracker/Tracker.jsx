@@ -9,8 +9,8 @@ export default function Tracker() {
     const classes = useStyles()
     const transactions =[
         {id: 1, type: 'Income', category:'Salary',amount: 100, date: "Wed Dec 23"},
-        {id: 1, type: 'Expense', category:'Pets',amount: 50, date: "Wed Dec 29"},
-        {id: 1, type: 'Income', category:'Work',amount: 40, date: "Wed Dec 30"},
+        {id: 2, type: 'Expense', category:'Pets',amount: 50, date: "Wed Dec 29"},
+        {id: 4, type: 'Income', category:'Work',amount: 40, date: "Wed Dec 30"},
     ] 
     return (
         <List dense={false} className={classes.list}>
