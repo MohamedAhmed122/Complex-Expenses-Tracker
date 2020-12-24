@@ -1,9 +1,10 @@
-import { Grid } from '@material-ui/core';
 import React from 'react'
-
+import { PushToTalkButtonContainer, PushToTalkButton, ErrorPanel } from '@speechly/react-ui'
+import { Grid } from '@material-ui/core';
 import useStyles from './Styles'
 import CardDetails from './app/Components/CardDetails/CardDetails';
 import MainCard from './app/Components/MainCard/MainCard';
+
 
 
 function App() {
@@ -24,6 +25,10 @@ function App() {
             <CardDetails title='Expense' price={70} />
           </Grid>
         </Grid>
+        <PushToTalkButtonContainer>
+          <PushToTalkButton />
+          <ErrorPanel />
+        </PushToTalkButtonContainer>
       </div>
     </>
   );
