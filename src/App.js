@@ -21,7 +21,7 @@ function App() {
             <MainCard />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <CardDetails title='Expenses' price={70} />
+            <CardDetails title='Expense' price={70} />
           </Grid>
         </Grid>
       </div>
