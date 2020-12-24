@@ -1,17 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import MoneyOffIcon from '@material-ui/icons/MoneyOff';
 import DeleteIcon from '@material-ui/icons/Delete';
 import useStyles from './Styles.js'
 import { Avatar, IconButton, List, ListItem, ListItemAvatar, ListItemSecondaryAction, ListItemText, Slide } from '@material-ui/core';
+import { TrackerContext } from '../../../Context/Context.js';
 
 export default function Tracker() {
     const classes = useStyles()
-    const transactions =[
-        {id: 1, type: 'Income', category:'Salary',amount: 100, date: "Wed Dec 23"},
-        {id: 2, type: 'Expense', category:'Pets',amount: 50, date: "Wed Dec 29"},
-        {id: 4, type: 'Income', category:'Work',amount: 40, date: "Wed Dec 30"},
-    ] 
+
+    const {transactions, deleteTransaction} = useContext(TrackerContext)
     return (
         <List dense={false} className={classes.list}>
         {transactions.map((transaction) => (
@@ -24,7 +22,7 @@ export default function Tracker() {
               </ListItemAvatar>
               <ListItemText primary={transaction.category} secondary={`$${transaction.amount} - ${transaction.date}`} />
               <ListItemSecondaryAction>
-                <IconButton edge="end" aria-label="delete" >
+                <IconButton edge="end" aria-label="delete" onClick={() => deleteTransaction(transaction.id)} >
                   <DeleteIcon />
                 </IconButton>
               </ListItemSecondaryAction>

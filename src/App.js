@@ -1,16 +1,15 @@
 import { Grid } from '@material-ui/core';
-import React, { useContext } from 'react'
+import React from 'react'
 
 import useStyles from './Styles'
 import CardDetails from './app/Components/CardDetails/CardDetails';
 import MainCard from './app/Components/MainCard/MainCard';
-import { TrackerContext } from './app/Context/Context';
 
 
 function App() {
   const classes = useStyles()
-    const trackerContext =useContext(TrackerContext)
-    console.log(trackerContext)
+
+
   return (
     <>
       <div>
@@ -22,7 +21,7 @@ function App() {
             <MainCard />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <CardDetails title='Expenses' price={60} />
+            <CardDetails title='Expenses' price={70} />
           </Grid>
         </Grid>
       </div>
