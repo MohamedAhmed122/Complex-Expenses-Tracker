@@ -1,1 +1,217 @@
 /* color: #e67e22; */
+
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  
+  }
+  
+  .navbar_container{
+    display: flex;
+    justify-content:space-between;
+  }
+  .logo > img{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    margin: 20px 100px;
+  
+  }
+  .links{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    color: white !important;
+  }
+  .link{
+    margin-right: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+  }
+  .link:hover{
+    border-bottom: 4px solid #e67e22;
+  }
+  .text_container{
+    margin-left: 160px;
+    margin-top: 120px;
+  }
+  .text_container > p{
+    color: white;
+    font-size: 45px;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+  .btn_group{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .btn_hungary{
+    width: 170px;
+    height: 50px;
+    background-color: #e67e22;
+    color: white;
+    border-radius: 45px;
+    font-size: 19px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin-right: 3rem;
+  
+  }
+  .btn_hungary:hover{
+    background-color: #c26a1d;
+  }
+  
+  .btn_more{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: #e67e22;
+    border-radius: 55px;
+    border: 2px solid #c26a1d;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .btn_more:hover{
+    background-color: #e67e22;
+    color: white;
+  }
+
+.food_fast_container{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.food_fast_title{
+    font-weight: 200;
+    color: #333;
+    font-size: 40px;
+
+}
+/* line  content = "" width height  block  left + right = auto = Center ma */
+/* .food_fast_title::after{
+    content: " ";
+    height: 2px;
+    width: 150px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 30px;
+    background-color: #e67e22;
+} */
+
+.line_empty{
+    border: 2px solid #e67e22;
+    width: 150px;
+    margin-top: 30px;
+}
+
+.food_fast_text{
+    margin-top: 30px;
+    font-size: large;
+    line-height: 30px;
+    text-align: center;
+}
+.icons_container{
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icon_container{ width: 20% }
+.icon_container h1{
+    font-size: 21px;
+    margin: 20px 0px;
+    font-weight: 200;
+}
+.icon_container p{
+    width: 250px;
+}
+.icon_{
+    color: white;
+   font-size: 30px !important;
+   transition: all ease 0.3s;
+}
+.icon_:hover{
+   font-size: 70px !important;
+}
+.colored_icon{
+    background-color: #e67e22;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.3s;
+}
+.colored_icon:hover{
+    background-color: gray;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+}
+.menu_container{
+    margin-top: 5rem;
+}
+.image_container{
+    display: flex;
+overflow: hidden;
+
+}
+.image_container img{
+    width: 25%;
+    object-fit: cover;
+    filter: brightness(50%);   
+    overflow: hidden;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: all ease-in-out 0.3s;
+}
+
+.image_container img:hover{
+    filter: brightness(100%);    
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+.cities_container{
+    display: flex;
+ margin-top: 5rem;
+}
+.city{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.city img{
+    width: 18vw;
+    margin-left: 4rem;
+    
+}
+.city_icon_container{
+    display: flex;
+    margin: 5px;
+    align-items: flex-start;
+    justify-content: start;
+    color: #e67e22 !important;
+}
+.city_icon_container p{
+
+    color: black;
+    padding:0px 10px;
+}
+.city_title{
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 200;
+}
